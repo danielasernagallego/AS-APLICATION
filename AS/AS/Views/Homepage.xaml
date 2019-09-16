@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.Homepage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="Sunset.jpg" Aspect="AspectFill" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout BindingContext="{Binding AS}"
+                    Padding="10,20,10,5"
+                    Orientation="Vertical">
+                    <Image Grid.Row="0" Source="hucha.png" WidthRequest="100" HeightRequest="200" Margin="0,58,0,30"  />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Button x:Name="actividadbtn" Text="Actividad actual" BackgroundColor="White" BorderRadius="25" TextColor="#FF5823" VerticalOptions="FillAndExpand" />
+                    <Label Text="" />
+                    <Button x:Name="balancebtn" Text="Balance de cuenta" BackgroundColor="White" BorderRadius="25" TextColor="#DC22C5" VerticalOptions="FillAndExpand" />
+                    <Label Text="" />
+                    <Button x:Name="historialbtn" Text="Historial" BackgroundColor="White" BorderRadius="25" TextColor="#26E9DA" VerticalOptions="FillAndExpand" />
+                    <Label Text="" />
+                </StackLayout>
+
+            </Grid>
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

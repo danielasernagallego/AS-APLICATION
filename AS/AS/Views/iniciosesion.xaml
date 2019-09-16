@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.iniciosesion"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <ScrollView
+            BindingContext="{Binding Login}">
+            <Grid>
+
+                <Image Source="Landscape.jpg" Aspect="AspectFill" />
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Padding="10,20,10,5">
+                        <Image Grid.Row="0" Source="hucha.png" WidthRequest="100" HeightRequest="150" Margin="0,58,0,30" />
+                        <Label Text="" />
+                        <Label Text="Correo electronico" />
+                        <Entry x:Name="entryusername" Text="{Binding email, Mode=TwoWay}"  Placeholder="Correo Electronico" PlaceholderColor="White" WidthRequest="300"/>
+                        <Label Text="Contraseña" />
+                        <Entry x:Name="entrypassword" Text="{Binding password, Mode=TwoWay}" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True" WidthRequest="300"/>
+                        <Label Text="" />
+                        <ActivityIndicator
+                            IsRunning="{Binding IsRunning, Mode=TwoWay}">
+                        </ActivityIndicator>
+                        <StackLayout Orientation="Horizontal">
+                            <Label HorizontalOptions="StartAndExpand"
+                               Text="Recordarme en este dispositivo"
+                               VerticalOptions="Center"></Label>
+                            <Switch IsToggled="{Binding IsRemembered, Mode=TwoWay}" HorizontalOptions="End"></Switch>
+                        </StackLayout>
+                        <Label
+                            HorizontalOptions="Center"
+                            Text="recordar contraseña"
+                            TextColor="White"></Label>
+                        <Grid Margin="0,10">
+                        </Grid>
+                        <Button x:Name="iniciocuentabtn" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEnabled, Mode=TwoWay}" Text="Iniciar sesion" BackgroundColor="White" BorderRadius="25" TextColor="#595F83" WidthRequest="300"/>
+                        <Grid Margin="0,20">
+                        </Grid>
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="Center"
+                                     >
+                            <Image 
+                            Source="facebook.png"
+                            WidthRequest="100">
+                            </Image>
+                            <Image 
+                            Source="instagram.png"
+                            WidthRequest="100">
+                            </Image>
+
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

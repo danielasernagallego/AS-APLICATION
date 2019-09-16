@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.agregardeuda">
+    <ContentPage.Content>
+        
+        <Grid>
+
+            <Image Source="Landscape.jpg" Aspect="AspectFill" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Padding="10,20,10,5"
+                    Orientation="Vertical">
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Entry x:Name="entrynombredeuda" Placeholder="Nombre de la deuda" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrynombreprestamista" Placeholder="Nombre del prestamista" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryvalordeuda" Placeholder="Valor de la deuda" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrynumcuotasdeuda" Placeholder="Cantidad de cuotas" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrytasainteresdeuda" Placeholder="Tasa de interes" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryfechainiciodeuda" Placeholder="Fecha de inicio de la deuda" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryfechafindeuda" Placeholder="Fecha final de la deuda" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Button x:Name="guardardeudabtn" Text="Guardar deuda" BackgroundColor="White" BorderRadius="25" TextColor="#595F83" />
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

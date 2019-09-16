@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.Registro"
+             Title="Registro">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="Landscape.jpg" Aspect="AspectFill" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Padding="10,20,10,5"
+                    Orientation="Vertical">
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Entry x:Name="entrynombre" Placeholder="Nombre" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrycorreo" Placeholder="Correo Electronico" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrytelefono" Placeholder="Numero de Telefono" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrycontraseña" Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryRcontraseña" Placeholder="Repetir Contraseña" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Button x:Name="registrobtn" Text="Registrarse" BackgroundColor="White" BorderRadius="25" TextColor="#595F83" />
+                    <Label x:Name="verifiregistrolbl" />
+                </StackLayout>
+
+            </Grid>
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
+

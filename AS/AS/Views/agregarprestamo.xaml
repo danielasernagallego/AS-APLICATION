@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.agregarprestamo">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="Landscape.jpg" Aspect="AspectFill" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Padding="10,20,10,5"
+                    Orientation="Vertical">
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Entry x:Name="entrynombreprestamo" Placeholder="Nombre del prestamo" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrynombredeudor" Placeholder="Nombre del deudor" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryvalorprestamo" Placeholder="Valor del prestamo" PlaceholderColor="White" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrynumcuotasprest" Placeholder="Cantidad de cuotas" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entrytasainteresprestamo" Placeholder="Tasa de interes" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryfechainicioprest" Placeholder="Fecha de inicio del prestamo" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Entry x:Name="entryfechafinprest" Placeholder="Fecha final del prestamo" PlaceholderColor="White" IsPassword="True" WidthRequest="250"  />
+                    <Label Text="" />
+                    <Button x:Name="guardarprestamobtn" Text="Guardar prestamo" BackgroundColor="White" BorderRadius="25" TextColor="#595F83" />
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

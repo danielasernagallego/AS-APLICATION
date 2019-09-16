@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AS.actividad">
+    <ContentPage.Content>
+
+        <Grid>
+
+            <Image Source="active.jpg" Aspect="AspectFill" />
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout Padding="10,20,10,5"
+                    Orientation="Vertical">
+                    <Image Grid.Row="0" Source="hucha.png" WidthRequest="100" HeightRequest="200" Margin="0,58,0,30"  />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Label Text="" />
+                    <Button x:Name="prestamosbtn" Text="Prestamos" BackgroundColor="White" BorderRadius="25" TextColor="#000000" VerticalOptions="End" />
+                    <Label Text="" />
+                    <Button x:Name="deudasbtn" Text="Deudas" BackgroundColor="White" BorderRadius="25" TextColor="#000000" VerticalOptions="End" />
+                </StackLayout>
+
+            </Grid>
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
